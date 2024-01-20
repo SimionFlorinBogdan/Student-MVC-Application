@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>College Home Page</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <h2>College Home Page</h2>
+        </div>
+    </div>
+    <hr>
+
+    <div class="list-group">
+        <a href="/showStudent" class="list-group-item list-group-item-action">Show Students</a>
+        <a href="/addStudent" class="list-group-item list-group-item-action">Quick Add Student (Only Manager)</a>
+        <a href="/updateSpecificStudent" class="list-group-item list-group-item-action">Quick Update Student (Only Admin)</a>
+        <a href="/deleteSpecificStudent" class="list-group-item list-group-item-action">Quick Delete Student (Only Admin)</a>
+    </div>
+
+    <hr>
+    <form action="#" th:action="@{/logout}" method="POST">
+        <button type="submit" class="btn btn-primary btn-sm mb-3">Logout</button>
+    </form>
+
+</div>
+
+</body>
+</html>
